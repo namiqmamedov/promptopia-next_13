@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Form = ({
   type,
@@ -39,7 +40,7 @@ const Form = ({
           className='form_input'/>
         </label>
 
-        {/* <div className='flex-end mx-3 mb-5 gap-4'>
+        <div className='flex-end mx-3 mb-5 gap-4'>
           <Link href="/" className='text-gray-500 text-sm'> 
             Cancel
           </Link>
@@ -47,10 +48,11 @@ const Form = ({
           <button
             type='submit'
             disabled={submitting}
+            className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'
           >
                 {submitting ? `${type}...` : type};
           </button>
-        </div> */}
+        </div>
       </form>
     </section>
   )
